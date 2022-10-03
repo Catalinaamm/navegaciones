@@ -1,17 +1,23 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: 'Poppins', sans-serif;
 }
-
+@font-face{
+    font-family: "playfair";
+    src: url("../fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf");
+}
+body{
+    overflow-x: hidden;
+}
 .nav {
-    background-color: #DD6951;
+    width: 100%;
+    position: fixed;
+    background-color:rgb(0, 0, 0);
     display: flex;
     justify-content: space-around;
     align-items: center;
     height: 8vh;
 }
-
 .logo {
     color: white;
     font-weight: bold;
@@ -20,17 +26,14 @@
     text-transform: uppercase;
     width: 30%;
 }
-
 .lista {
     display: flex;
     width: 40%;
     justify-content: space-around;
 }
-
 .lista__li {
     list-style: none;
 }
-
 .lista__a {
     text-decoration: none;
     color: rgb(255, 255, 255);
@@ -38,7 +41,6 @@
     font-weight: bold;
     font-size: 14px;
 }
-
 .lista__a::after {
     content: '';
     display: block;
@@ -54,7 +56,7 @@
 
 }
 .burger{
-    display:block;
+    display:none;
 }
 .burger__line1, .burger__line2, .burger__line3{ 
     width: 23px;
@@ -64,6 +66,189 @@
     background-color: rgb(193, 193, 193);
     transition: all 1s ease-out;
 }
+.imagx {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    
+  }
+  .holaa{
+    background-color: black;
+  }
+  .imagen {
+    /* width: 100%;
+    height: 615px; */
+    background-image: url(../img/catal.jpg);
+    /* background-size: cover;
+    border-radius: 400px; */
+    width: 58%;
+    height: 75%;
+    /* background-image: url(img/coleccionjpg.jpg); */
+    background-size: cover;
+    border-radius: 43%;
+    border: solid;
+    margin-left: 20%;
+    margin-top: 5%;
+  }
+  .ledre {
+    text-align: center;
+    top: 130px;
+    margin: 170px;
+    color: #ffffff;
+    font-size: 3em;
+  }
+  
+  #boton1 {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: rgb(0, 0, 0);
+    padding: 3mm;
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border-radius: 70px;
+  }
+  
+  #boton1:hover {
+    background-color: rgb(134, 119, 119);
+  }
+.fondo{ background-color: rgba(0, 0, 0); width:100%; height: 475px; }
+.titulo{ font-family: 'Poppins', sans-serif;}
+.enorden{ display: flex; } 
+.mitad1{ width: 265px; height: 385px;  margin: auto; background-color: rgb(55 55 55); top: 30px; border-radius: 70px; }
+.mitad2{ width: 265px; height: 385px; margin: auto; background-color: rgb(55 55 55); top: 30px; justify-content: center; border-radius: 70px; }
+.mitad3{ width: 265px; height: 385px; margin: auto; background-color:  rgb(55 55 55); border-radius: 70px; }
+.titulo{ font-size:35px; text-align: center; color: white; padding: 5mm;  } 
+.frontimg{ width: 100%; border-radius: 20px; }
+.blanco{ color: whitesmoke;padding: 9px; }
+.enorden{ display: flex;  ba} 
+.titulo{ font-size:35px; text-align: center; color: white; padding: 5mm; } 
+.foo{ background-color: rgb(0, 0, 0); height: 48px; text-align: center; color: antiquewhite;}
+#boton2{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    background-color: black;
+    padding: 3mm;
+    margin: 39%;
+    font-family: Arial, Helvetica, sans-serif;
+    top: -71px;
+}
+#boton2:hover{ 
+    background-color: rgb(160, 145, 156);
+}
+.imge{ display: flex; justify-content: center; align-items: center; } 
+.div2{ flex-direction: column; justify-content: center; align-items: center; } 
+.imgya{ height: 312px; padding: 4em;border-radius: 400px; } 
+.morado{ color:rgb(46, 145, 220); font-size: 2em; margin: 2em; padding: -1px; top: -1px; left: 175px; } 
+.strong{ color :#546154de} 
+.parrafo { margin: 48px; padding: 14px; top: -77px; left: 68px; font-size: large; color:white;}
+.color5{
+    background-color: white;
+    height: 339px;
+}
+.contactos{
+    font-family: initial;
+    position: relative;
+    top: 39px;
+    left: 25px;
+    font-style: oblique;
+    font-size: 35px;
+    text-align: center;
+}
+.consultas{
+    font-family: initial;
+    position: relative;
+    top: 107px;
+    left: 126px;
+    font-style: oblique; 
+    color: #3c3a3a;
+}
+.tel{
+    font-family: cursive;
+    position: relative;
+    top: 107px;
+    left: 126px;
+    font-style: oblique;
+    text-decoration:none;
+}
+.atencion{
+    font-family: initial;
+    position: relative;
+    top: 7px;
+    left: 398px;
+    font-style: oblique;
+    color: #3c3a3a;
+}
+.atencion2{
+    font-family: cursive;
+    position: relative;
+    top: 7px;
+    left: 398px;
+    font-style: oblique;
+    color: #3c3a3a;
+}
+.ventas{
+    font-family: initial;
+    position: relative;
+    top: 7px;
+    left: 690px;
+    font-style: oblique;
+    color:#3c3a3a;
+}
+.ventas2{
+    font-family: cursive;
+    position: relative;
+    top: 7px;
+    left: 742px;
+    font-style: oblique;
+}
+.a{
+    text-decoration: none;
+}
+.listica{
+    font-family: cursive;
+    position: relative;
+    top: 7px;
+    left: 752px;
+    font-style: oblique;
+    color: #3c3a3a;
+}
+.color6{
+    position: relative;
+    left: 155px;
+}
+.fro{
+    position: relative;
+    width: 120px;
+    left: 377px;
+}
+.froi{
+    position: relative;
+    width: 45px;
+    left: -100px;
+    height: 30px;
+}
+.froii{
+    position: relative;
+    width: 45px;
+    left: -145px;
+    height: 30px;
+    top: 31px;
+}
+.froiii{
+    position: relative;
+    width: 45px;
+    left: -190px;
+    height: 30px;
+    top: 62px;
+}
+
 @media screen and (max-width: 1024px){
     .lista{
         width:60%;
@@ -81,7 +266,7 @@
      right:0px;
      top:8vh;
      height: 92vh;
-     background-color: #DD6951;
+     background-color: black;
      width: 50%;
      display: flex;
      justify-content: space-around;
@@ -111,5 +296,6 @@
     .toggle .burger__line3{
         transform: rotate(45deg)  translate(0px, -7px);
     }
+
 }
     
